@@ -1,0 +1,20 @@
+{
+  "clientes": [
+    {
+      "nombre": "Arturo Michelena",
+      "email": "arturo@michelena",
+      "telefono": "0101010101",
+      "empresa": "ArturoPaintings",
+      "proyecto": "Hiking Agency",
+      "id": 2
+    },
+    {
+      "nombre": "Reinaldo Armas",
+      "email": "rdiarmas@elllanoesplano.com",
+      "telefono": "2020202020",
+      "empresa": "La estancia",
+      "proyecto": "CRM clientes",
+      "id": 3
+    }
+  ]
+}

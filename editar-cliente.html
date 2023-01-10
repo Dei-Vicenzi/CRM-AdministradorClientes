@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Clientes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.css" />
+</head>
+
+<body>
+    <h1 class="text-center mt-16 text-3xl text-gray-900 dark:text-white">Editar Clientes</h1>
+
+    <div class="flex gap-28 py-16 px-20">
+        
+        <aside class="w-64 basis-1/4" aria-label="Sidebar">
+            <div class="px-3 py-4 overflow-y-auto rounded bg-lime-200 dark:bg-lime-800">
+                  
+                  <span class="pl-3 text-xl text-gray-600 font-semibold whitespace-nowrap dark:text-white">Clientes CRM</span>
+               </a>
+               <ul class="space-y-2">
+                  <li>
+                     <a href="/index.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-lime-300 dark:hover:bg-lime-700">
+                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="#db2777" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                        <span class="ml-3 text-gray-600">Lista de Clientes</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a  href="/nuevo-cliente.html"  class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-lime-300 dark:hover:bg-lime-700">
+                        <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="#db2777" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                        <span class="flex-1 ml-3 whitespace-nowrap text-gray-600">Nuevo Cliente</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </aside>
+
+ <!-- formulario -->
+<form id="formulario" method="POST">
+    <div class="grid gap-6 mb-6 md:grid-cols-3">
+        <div>
+            <label for="nombre" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre</label>
+            <input type="text" 
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+            id="nombre"
+            name="nombre"
+            type="text"
+            placeholder="Nombre Cliente"
+            required>
+        </div>
+        <div class="mb-6">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+            <input 
+            type="email" 
+            id="email" 
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+            placeholder="michi.ink@company.com" 
+            name="email"
+            required>
+        </div> 
+        <div>
+            <label for="telefono" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Teléfono</label>
+            <input 
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+            id="telefono"
+            name="telefono"
+            type="tel"
+            placeholder="Teléfono Cliente"
+            required>
+        </div>
+        <div>
+            <label for="empresa" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Empresa</label>
+            <input 
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+            id="empresa"
+            name="empresa"
+            type="text"
+            placeholder="Empresa Cliente" 
+            required>
+        </div>  
+        <div class="col-span-2">
+            <label for="proyecto" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Proyecto</label>
+            <input 
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+            id="proyecto"
+            name="proyecto"
+            type="text"
+            placeholder="Proyecto del Nombre" 
+            required>
+        </div>  
+           
+    </div>
+    <input type="hidden" name="id" id="id" value="">
+
+    <button type="submit" class="text-white bg-lime-700  hover:bg-lime-800 focus:ring-4 focus:outline-none focus:ring-lime-300 font-medium rounded-lg text-sm mt-8 sm:w-2/4 px-5 py-2.5 text-center dark:bg-lime-600 dark:hover:bg-lime-700 dark:focus:ring-lime-800">Guardar Cambios</button>
+    </form>
+
+    </div>
+
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+
+    <script src="js/editarcliente.js" type="module"></script>
+
+</body>
+</html>

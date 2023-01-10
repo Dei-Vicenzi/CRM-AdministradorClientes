@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Clientes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.css" />
+</head>
+<body>
+    <h1 class="text-center mt-16 text-3xl text-gray-900 dark:text-white">Lista de Clientes </h1>
+    <p class="mt-2 text-center">Administra tus Clientes con el CRM</p>
+
+    <div class="flex gap-10 py-16 px-12 ">
+               
+<aside class="w-64 basis-1/4" aria-label="Sidebar">
+    <div class="px-3 py-4 overflow-y-auto rounded bg-lime-200 dark:bg-lime-800">
+          
+          <span class="pl-3 text-gray-600 text-xl font-semibold whitespace-nowrap dark:text-white">Clientes CRM</span>
+       </a>
+       <ul class="space-y-2">
+          <li>
+             <a href="#" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-lime-300 dark:hover:bg-lime-700">
+                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="#db2777" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                <span class="ml-3 text-gray-600">Lista de Clientes</span>
+             </a>
+          </li>
+          <li>
+             <a  href="nuevo-cliente.html"  class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-lime-300 dark:hover:bg-lime-700">
+                <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" fill="#db2777" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+                <span class="flex-1 ml-3 whitespace-nowrap text-gray-600">Nuevo Cliente</span>
+             </a>
+          </li>
+       </ul>
+    </div>
+ </aside>
+  
+<div class="relative basis-3/4 overflow-x-auto shadow-md sm:rounded-lg">
+   
+    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+        <thead class=" text-xs text-gray-600 uppercase bg-lime-200 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-3 text-center">
+                    Nombre
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    Email
+                </th>
+                <th scope="col" class="px-6 py-3 text-center ">
+                    Teléfono
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    Empresa
+                </th>
+                <th scope="col" class="px-6 py-3 text-center">
+                    Proyecto
+                </th>
+                <th scope="col" class="px-8 py-3 text-center">
+                    Acciones
+                </th>
+            </tr>
+        </thead>
+
+        <tbody id="listado-clientes"></tbody>
+
+    </table>
+</div>
+    </div>
+    
+    <script src="https://unpkg.com/flowbite@1.6.0/dist/flowbite.min.js"></script>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
